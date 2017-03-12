@@ -12,7 +12,7 @@ public class EventHandler extends ListenerAdapter{
 		 e.getChannel().sendMessage("Total " + Methods.getAllGuilds() +" guilds visible!").queue();
 		 e.getChannel().sendMessage("Total " + Methods.getAllTextChannels() +" text channels visible!").queue();
 		 e.getChannel().sendMessage("Total " + Methods.getAllVoiceChannels() +" voice channels visible!").queue();
-		 
+		 e.getChannel().sendMessage(e.getJDA().getEmotes().toString()).queue();
 		 
 	}
 }
