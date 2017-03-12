@@ -3,7 +3,7 @@ package com.thebotproject.Main;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
-public class EventHandler extends ListenerAdapter{
+public class EventListener extends ListenerAdapter{
 	public void onMessageReceived(MessageReceivedEvent e) {
 		 
 		 

@@ -10,7 +10,7 @@ import net.dv8tion.jda.core.exceptions.RateLimitedException;
 public class Methods {
 	public static void doAuth() {
 		try {
-			Var.jda = new JDABuilder(AccountType.BOT).setToken("").addListener(new The_Bot()).setGame(Game.of("recoding!")).buildBlocking();
+			Var.jda = new JDABuilder(AccountType.BOT).setToken(SecretData.Token).addListener(new EventListener()).setGame(Game.of("recoding!")).buildBlocking();
 		} catch (LoginException e) {
 			e.printStackTrace();
 		} catch (IllegalArgumentException e) {
